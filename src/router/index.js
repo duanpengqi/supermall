@@ -1,10 +1,12 @@
 //1. 导入路由和Vue实例
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from 'views/home/Home'
-import Category from 'views/category/Category'
-import Cart from 'views/cart/Cart'
-import Profile from 'views/profile/Profile'
+
+const Home = () => import('views/home/Home')
+const Category = () => import('views/category/Category')
+const Cart = () => import('views/cart/Cart')
+const Profile = () => import('views/profile/Profile')
+const Detail = () => import('views/detail/Detail')
 
 // 2. 注册路由插件
 Vue.use(VueRouter)
@@ -30,6 +32,10 @@ const routes = [
   {
     path: '/profile',
     component: Profile
+  },
+  {
+    path: '/detail/:iid',
+    component: Detail
   }
 ]
 
