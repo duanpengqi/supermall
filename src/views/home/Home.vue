@@ -36,7 +36,7 @@ import { debounce } from "common/utils";
 import NavBar from "components/common/navbar/NavBar.vue";
 import TabControl from "components/content/tabControl/TabControl.vue";
 import GoodsList from "components/content/goods/GoodsList";
-import Scroll from "components/common/scroll/BScroll";
+import Scroll from "components/common/scroll/Scroll";
 import BackTop from "components/content/backTop/BackTop";
 
 import HomeSwiper from "./childComps/HomeSwiper.vue";
